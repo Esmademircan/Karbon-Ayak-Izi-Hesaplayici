@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karbon Ayak İzi Hesaplayıcı</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Karbon Ayak İzi Hesaplayıcı</h1>
+    <form action="calculate.php" method="POST">
+        <div class="form-group">
+            <label for="transport">Haftalık araç kullanımınız (km):</label>
+            <input type="number" id="transport" name="transport" required>
+        </div>
+        <div class="form-group">
+            <label for="electricity">Aylık elektrik tüketiminiz (kWh):</label>
+            <input type="number" id="electricity" name="electricity" required>
+        </div>
+        <div class="form-group">
+            <label for="meat">Haftalık et tüketiminiz (kg):</label>
+            <input type="number" id="meat" name="meat" required>
+        </div>
+        <div class="form-group">
+            <label for="flights">Yıllık uçak yolculuklarınız (saat):</label>
+            <input type="number" id="flights" name="flights" required>
+        </div>
+        <div class="form-group">
+            <label for="food">Haftalık gıda tüketiminiz (kg):</label>
+            <input type="number" id="food" name="food" required>
+        </div>
+        <div class="form-group">
+            <label for="heating">Aylık ısınma harcamalarınız (TL):</label>
+            <input type="number" id="heating" name="heating" required>
+        </div>
+        <button type="submit">Hesapla</button>
+    </form>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>
+
