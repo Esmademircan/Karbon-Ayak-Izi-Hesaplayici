@@ -10,9 +10,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $carbon_transport = $transport * 0.21;
     $carbon_electricity = $electricity * 0.527;
     $carbon_meat = $meat * 27;
-    $carbon_flights = $flights * 0.254; // kg CO2 per flight hour
-    $carbon_food = $food * 2.5; // average kg CO2 per kg of food
-    $carbon_heating = $heating * 0.2; // average kg CO2 per TL spent on heating
+    $carbon_flights = $flights * 0.254;
+    $carbon_food = $food * 2.5; 
+    $carbon_heating = $heating * 0.2; 
 
     $total_carbon = $carbon_transport + $carbon_electricity + $carbon_meat + $carbon_flights + $carbon_food + $carbon_heating;
     ?>
